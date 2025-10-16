@@ -34,7 +34,7 @@ if arts_df is None:
 df = arts_df.copy()
 
 st.header("🔍 Data Preview")
-st.dataframe
+st.dataframe(df)
 
 # --- Data Preprocessing Functions (for Plotly Visualizations) ---
 
