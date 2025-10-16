@@ -95,9 +95,7 @@ def plot_gender_distribution(data):
     )
     fig.update_traces(textposition='inside', textinfo='percent+label')
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown (
-        " The survey strongly shows that women are the main voice in this data, making up over three-quarters of the respondents 76.1%. Because of this, we need to remember that all the satisfaction scores and opinions we see are primarily reflecting the female students' experience in the faculty."
-    )
+    st.info(" The survey sample is heavily skewed towards female students, which is approximately 76.1% of all respondents. This high gender imbalance suggests that the insights and satisfaction ratings drawn from the data primarily reflect the experiences and opinions of the female student population.When interpreting the results, it is crucial to recognize this demographic skew, as the findings may not be fully representative of the entire faculty's student body.")
 
 def plot_gpa_trend(data):
     """Creates a Plotly Line chart for Mean GPA Trend."""
