@@ -79,10 +79,7 @@ def clean_gpa_data(data):
 
 
 # --- Visualization Functions (using Plotly) ---
-
-st.info(" The survey strongly shows that women are the main voice in this data, making up over three-quarters of the respondents ($\approx 76\%$). Because of this, we need to remember that all the satisfaction scores and opinions we see are primarily reflecting the female students' experience in the faculty.")
     
-
 def plot_gender_distribution(data):
     """Creates a Plotly Pie chart for Gender Distribution."""
     gender_counts = data['Gender'].value_counts().reset_index()
@@ -98,6 +95,9 @@ def plot_gender_distribution(data):
     )
     fig.update_traces(textposition='inside', textinfo='percent+label')
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown (
+        " The survey strongly shows that women are the main voice in this data, making up over three-quarters of the respondents 76.1%. Because of this, we need to remember that all the satisfaction scores and opinions we see are primarily reflecting the female students' experience in the faculty."
+    )
 
 def plot_gpa_trend(data):
     """Creates a Plotly Line chart for Mean GPA Trend."""
