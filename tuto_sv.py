@@ -33,6 +33,9 @@ if arts_df is None:
 # Use 'df' for convenience as it was used in the original code snippets
 df = arts_df.copy()
 
+st.header("🔍 Data Preview")
+st.dataframe
+
 # --- Data Preprocessing Functions (for Plotly Visualizations) ---
 
 def clean_gpa_data(data):
@@ -265,8 +268,6 @@ with col6:
     st.subheader("Average Rating: Policy vs. Implementation")
     plot_policy_vs_implementation_ratings(df)
 
-st.header("🔍 Data Preview")
-st.dataframe(df.head(5))
 
 # Note: The original code contained a call to a function `plot_mean_rating_by_year(df.copy())` 
 # and a few print statements which are replaced by the structured Streamlit layout and Plotly charts.
