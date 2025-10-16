@@ -95,7 +95,7 @@ def plot_gender_distribution(data):
     )
     fig.update_traces(textposition='inside', textinfo='percent+label')
     st.plotly_chart(fig, use_container_width=True)
-    st.info(" The survey sample is heavily skewed towards female students, which is approximately 76.1% of all respondents. This high gender imbalance suggests that the insights and satisfaction ratings drawn from the data primarily reflect the experiences and opinions of the female student population.When interpreting the results, it is crucial to recognize this demographic skew, as the findings may not be fully representative of the entire faculty's student body.")
+    st.info(" The people who took this survey are mostly women, making up about 76% of the total. This means the overall results mainly reflect the female students' experience in the faculty. So, the opinions of male students are less represented in this feedback.")
 
 def plot_gpa_trend(data):
     """Creates a Plotly Line chart for Mean GPA Trend."""
@@ -116,6 +116,7 @@ def plot_gpa_trend(data):
     )
     fig.update_yaxes(gridcolor='lightgray')
     st.plotly_chart(fig, use_container_width=True)
+    st.info("Student grades are very consistent over their four years, never going up or down much. This shows a stable academic environment where students maintain a steady performance level. The faculty's grading seems predictable, and students aren't facing sudden difficulty changes.")
 
 def plot_expectation_comparison(data):
     """Creates a Plotly Box plot for Expectation vs. Satisfaction."""
@@ -157,6 +158,7 @@ def plot_expectation_comparison(data):
         yaxis_range=[1, 5.2]
     )
     st.plotly_chart(fig, use_container_width=True)
+    st.info("The faculty has done a great job which is the students felt their initial hopes and expectations were met and then some. They were already optimistic coming in, but the program delivered even slightly better than expected. This is a very positive sign that the faculty is successfully living up to its promises.")
 
 def plot_top_best_aspects(data):
     """Creates a Plotly Bar chart for the Top 5 Best Aspects."""
@@ -179,6 +181,7 @@ def plot_top_best_aspects(data):
     )
     fig.update_yaxes(automargin=True)
     st.plotly_chart(fig, use_container_width=True)
+    st.info("The best things about this program are the professors and the way they teach. These two factors are the program's biggest strengths according to the students. Everything else, like resources or facilities, is seen as much less important than the quality of the teaching staff.")
 
 def plot_improvement_perception_by_gender(data):
     """Creates a Plotly Grouped Bar chart for Improvement Perception."""
@@ -209,6 +212,7 @@ def plot_improvement_perception_by_gender(data):
     )
     fig.update_yaxes(tickformat=".0%", range=[0, 1.0])
     st.plotly_chart(fig, use_container_width=True)
+    st.info("Men and women see the university's progress differently. More men think the quality of education is getting better, while more women think the university's reputation is improving. This highlights that the two groups are noticing and prioritizing different types of positive changes at the university.")
 
 def plot_policy_vs_implementation_ratings(data):
     """Creates a Plotly Bar chart for Average Rating: Policy vs. Implementation."""
@@ -241,6 +245,7 @@ def plot_policy_vs_implementation_ratings(data):
         yaxis_range=[3.5, 5.0]
     )
     st.plotly_chart(fig, use_container_width=True)
+    st.info("Students approve of the written rules and plans (policies) more than they approve of how those rules are carried out in reality. There's a small gap here. The university should focus on improving the delivery of day-to-day things, like better resources or facilities, to match the quality of its policies.")
 
 
 # --- Streamlit Layout: Columns and Sections ---
