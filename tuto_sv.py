@@ -8,7 +8,13 @@ URL = "https://raw.githubusercontent.com/Wanioooo/tuto-SV/refs/heads/main/arts_f
 
 # --- Streamlit App Setup ---
 
-st.set_page_config(layout="wide", page_title="Arts Faculty Student Survey Analysis")
+
+st.set_page_config(
+    page_title="Scientific Visualization"
+)
+
+st.header("Scientific Visualization", divider="gray")
+
 
 st.title("🎓 Arts Faculty Student Survey Analysis")
 st.markdown("Exploring student demographics, academic performance, and satisfaction using Plotly visualizations.")
