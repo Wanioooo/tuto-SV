@@ -6,6 +6,13 @@ import plotly.graph_objects as go
 # Define the URL of the CSV file
 URL = "https://raw.githubusercontent.com/Wanioooo/tuto-SV/refs/heads/main/arts_faculty_data.csv"
 
+col1, col2, col3, col4 = st.columns(4)
+   
+col1.metric(label="PLO 2", value=f"3.3", help="PLO 2: Cognitive Skill", border=True)
+col2.metric(label="PLO 3", value=f"3.5", help="PLO 3: Digital Skill", border=True)
+col3.metric(label="PLO 4", value=f"4.0", help="PLO 4: Interpersonal Skill", border=True)
+col4.metric(label="PLO 5", value=f"4.3", help="PLO 5: Communication Skill", border=True)
+
 # --- Streamlit App Setup ---
 
 
