@@ -12,5 +12,5 @@ pg = st.navigation(
         {
             "Menu": [home, visualise]
         }
-    )
+)
 pg.run()
